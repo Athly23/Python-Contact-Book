@@ -82,7 +82,12 @@ def main():
             pull = Contact.get(Contact.first_name == search)
             print(f"{pull.first_name}, {pull.last_name}, {pull.phone}")
         elif entry == 3:
-            print(entry)
+            create_first_name = input("First Name: ")
+            create_last_name = input("Last Name: ")
+            create_phone = input("Phone Number (No dashes inbetween numbers): ")
+            new_contact = Contact(first_name = create_first_name, last_name = create_last_name, phone = create_phone)
+            new_contact.save()
+            print(f"{new_contact.first_name}, {new_contact.last_name}, {new_contact.phone}")
         else: 
             print("If I had a gun with two bullets and I was in a room with Hitler, Bin Laden and Toby, I would shoot Toby twice. Goodbye")
         # entry = menu()
