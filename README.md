@@ -31,6 +31,8 @@ This allows the user to create a contact and add it to the database by following
 Example:
 3 will allow user to create a contact and will prompt the user to add a first name, last name and phone number.
 
+To exit the program, the user can enter the number 4 and it will leave the user with a message before exiting the program.
+
 # Author
 
 Andrew Ly
